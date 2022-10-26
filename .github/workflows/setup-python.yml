@@ -13,4 +13,3 @@ jobs:
         python-version: '3.9'
         cache: 'pip' # caching pip dependencies
     - run: pip install -r $GITHUB_WORKSPACE/requirements.txt
-    - run pip install pytest-html
