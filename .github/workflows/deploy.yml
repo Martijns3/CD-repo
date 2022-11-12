@@ -1,0 +1,32 @@
+name: Run tests
+
+# Run this workflow whenever something new is pushed.
+on: push
+jobs:
+
+    name: Push to VPS
+    runs-on: ubuntu-20.04
+    steps:
+        uses: actions/checkout@v2
+
+      - name: SCP Command to Transfer Files
+        uses: appleboy/scp-action@v0.1.3
+
+        env:
+          HOST: ${{ secrets.HOST }}
+          USERNAME: ${{ secrets.USERNAME }}
+          PORT: ${{ secrets.PORT }}
+          KEY: ${{ secrets.SSHKEY }}
+        with:
+          source: "."
+          target: "/home/winccd/test"
+   
+      - name: SSH Remote Commands
+        uses: appleboy/ssh-action@v0.1.5
+
+        with:
+          host: ${{ secrets.HOST }}
+          USERNAME: ${{ secrets.USERNAME }}
+          PORT: ${{ secrets.PORT }}
+          KEY: ${{ secrets.SSHKEY }}
+          script: ls
