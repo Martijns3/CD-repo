@@ -1,15 +1,16 @@
-name: Run tests
+name: Deploy
 
-# Run this workflow whenever something new is pushed.
-on: push
+on: [push]
 jobs:
   build:
-    runs-on: ubuntu-20.04
+
+    runs-on: ubuntu-latest
+
     steps:
-        uses: actions/checkout@v2
+      - uses: actions/checkout@v1
 
       - name: SCP Command to Transfer Files
-        uses: appleboy/scp-action@v0.1.3
+        uses: appleboy/scp-action@vmaster
 
         env:
           HOST: ${{ secrets.HOST }}
@@ -21,7 +22,7 @@ jobs:
           target: "/home/winccd/test"
    
       - name: SSH Remote Commands
-        uses: appleboy/ssh-action@v0.1.5
+        uses: appleboy/ssh-action@master
 
         with:
           host: ${{ secrets.HOST }}
