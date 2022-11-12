@@ -21,12 +21,3 @@ jobs:
           source: "."
           target: "/home/winccd/test"
    
-      - name: SSH Remote Commands
-        uses: appleboy/ssh-action@master
-
-        with:
-          host: ${{ secrets.HOST }}
-          USERNAME: ${{ secrets.USERNAME }}
-          PORT: ${{ secrets.PORT }}
-          KEY: ${{ secrets.SSHKEY }}
-          script: ls
