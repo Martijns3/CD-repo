@@ -3,7 +3,7 @@ name: Run tests
 # Run this workflow whenever something new is pushed.
 on: push
 jobs:
-
+  build:
     name: Push to VPS
     runs-on: ubuntu-20.04
     steps:
