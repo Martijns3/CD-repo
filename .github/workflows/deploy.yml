@@ -16,7 +16,7 @@ jobs:
         run: pip install -r requirements.txt
       - name: Run tests
         run: pytest
-  build:
+  send-files-to-vps:
 
     runs-on: ubuntu-20.04
 
