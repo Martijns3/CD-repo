@@ -1,3 +1,4 @@
 #!/bin/bash
-cd ~
-mkdir hijdoethet
+cd ~/test
+git pull
+mkdir tegek
