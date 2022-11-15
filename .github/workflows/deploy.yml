@@ -3,7 +3,7 @@ name: Deploy
 on: push
 jobs:
   run-tests:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-20.04
     steps:
       - name: Checkout repository
         uses: actions/checkout@v2
