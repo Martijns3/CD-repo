@@ -2,5 +2,5 @@ def power(x, y):
     return x**y
 
 
-#dit is de laatste versie met fout 17.38
+#dit is de laatste versie met fout 17.55
 #blablabla
