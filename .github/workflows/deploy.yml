@@ -31,5 +31,5 @@ jobs:
         PORT: ${{ secrets.PORT }}
         KEY: ${{ secrets.SSHKEY }}
         script: |
-                  bash ~/test/update.sh
+                  bash ~/bash_scripts/update.sh
    
