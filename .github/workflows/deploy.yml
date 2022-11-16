@@ -20,9 +20,9 @@ jobs:
   send-files-to-vps:
     needs: run-tests
     runs-on: ubuntu-20.04
-
     steps:
-    
+      - name: Setup SSH passphrase
+	uses: actions/checkout@v2
       env:
         SSH_PASSPHRASE: ${{secrets.SSH_PASSPHRASE}}
         SSH_PRIVATE_KEY: ${{secrets.SSHKEY}}
