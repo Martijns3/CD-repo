@@ -1,5 +1,14 @@
 {% extends "base.html" %}
 {% block content %}
 <!-- Your solution here. -->
-{% endblock content %}
 
+{%if user =='Alice' %}
+    <body class="alice">
+{%elif user=='Bob' %}
+    <body class="bob">
+{%endif%}
+<h2>Dashboard</h2>
+<p>Congrats <body2>{{user}}</body2>, you've reached the dashboard!</p>
+<button type="button" onclick="window.location.href='{{ url_for( 'logout') }}';">Logout</button>
+</body>
+{% endblock content %}
