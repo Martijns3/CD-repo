@@ -15,7 +15,6 @@ jobs:
       - name: Install Dependencies
         run: pip install -r requirements.txt
       - name: Run tests
-	workingDirectory: Flask-website/
         run: pytest
 
   send-files-to-vps:
