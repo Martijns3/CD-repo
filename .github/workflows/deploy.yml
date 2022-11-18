@@ -30,8 +30,6 @@ jobs:
         USERNAME: ${{ secrets.USERNAME }}
         PORT: ${{ secrets.PORT }}
         KEY: ${{ secrets.SSHKEY }}
-  run-remote-script:
-    runs-on: ubuntu-20.04
         script: |
                   bash ~/bash_scripts/update.sh
    
