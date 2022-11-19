@@ -11,7 +11,7 @@ app = Flask(__name__)
 app.config["SEND_FILE_MAX_AGE_DEFAULT"] = 0
 app.secret_key = os.urandom(16)
 
-
+#cache-control tbv niet opslaan sessies die logged -out zijn.
 @app.after_request
 def add_header(r):
     r.headers["Cache-Control"] = "no-store max-age=0"
