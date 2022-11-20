@@ -1,5 +1,5 @@
 # README.md
-[<a href='README/badge.svg'>badge.svg</a>Deploy](https://github.com/Martijns3/CD-repo/actions/workflows/deploy.yml)
+[![Deploy](https://github.com/Martijns3/CD-repo/actions/workflows/deploy.yml/badge.svg)](https://github.com/Martijns3/CD-repo/actions/workflows/deploy.yml)
 
 
 # 3 components of my solution
