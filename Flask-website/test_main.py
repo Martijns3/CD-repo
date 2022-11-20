@@ -28,4 +28,4 @@ def test_get_home_returns_200(client):
     
 def test_logout_returns_302(client):
     response = client.get("/logout")
-    assert response.status_code == 301
+    assert response.status_code == 302
