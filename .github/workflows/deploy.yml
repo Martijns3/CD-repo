@@ -8,6 +8,10 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v2
 
+# Oa de Python setup had ik nu achterwege kunnen laten, omdat deze inmiddels is geïnstalleerd. 
+# Ik heb die er nu voor de volledigheid bij laten staan.
+      - name: Setup Python
+        uses: actions/setup-python@v2
 
         with:
           python-version: '3.8.6'
