@@ -2,7 +2,6 @@ body {
     margin: 0 auto;
     max-width: 720px;
     font-size: 18px;
-    color: black;
 }
 body2 {
     margin: 0 auto;
@@ -16,12 +15,10 @@ h1 {
 
 .largeText {
     font-size: 24px;
-    color: white;
 }
 
 .boldText {
     font-weight: bold;
-    color: white;
 }
 
 .error {
