@@ -50,7 +50,7 @@ def about():
 
 @app.route("/lon")
 def lon():
-    return render_template("lon.html", title="League of Nations")
+    return render_template("lon.html", title="Cats")
 
 
 @app.route("/login", methods=["GET", "POST"])
